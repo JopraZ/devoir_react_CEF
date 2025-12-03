@@ -1,9 +1,9 @@
-import Header from "../component/Header";
+import Navbar from "../component/Navbar";
 
-function EnTete(){
+function Header(){
     return(
-        <Header />
+        <Navbar />
     );
 }
 
-export default EnTete;
+export default Header;

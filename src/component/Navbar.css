@@ -1,0 +1,30 @@
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-evenly;
+    padding: 20px 10px 10px;
+} 
+
+header h1 {
+    font-size: medium;
+}
+
+.pages {
+    color: #cecece;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    padding-left: 15px
+}
+
+.pages:hover {
+     color: white;
+     text-decoration: underline;
+}
+
+.pages.active{
+    font-weight: bold;
+    border-bottom: 2px solid #3498db;
+}
