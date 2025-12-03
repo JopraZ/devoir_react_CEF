@@ -3,7 +3,7 @@
 export default function header(){
     return (
         <header>
-            <h1>John Doe</h1>
+            <h1>JOHN DOE</h1>
         </header>
     );
 }
