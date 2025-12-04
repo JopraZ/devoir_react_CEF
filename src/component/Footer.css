@@ -2,7 +2,7 @@ footer{
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: bottom;
     bottom: 0;
     left: 0;
@@ -16,20 +16,28 @@ footer h2 {
     font-size: large;
 }
 
+
+
 .contactLink {
     color: #cecece;;
     text-decoration: none;
     transition: all 0.3s ease;
-} 
+    width: fit-content;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    padding-right: 5px;
+    gap: 15px;
+}
 
 .contactLink:hover {
     color: white;
-    text-decoration: underline;
+    font-weight: bold;
+    letter-spacing: 0.01em;
 }
 
 .textblock {
-    display: flex;
-    flex-direction: column;
+    display: grid; /* ou flex */
+    grid-template-columns: 1fr; /* Colonne unique */
+    width: max-content;
     margin-top: 15px;
     margin-bottom: 15px;
 }

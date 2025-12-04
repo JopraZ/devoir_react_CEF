@@ -23,6 +23,11 @@ header h1 {
 
 }
 
+.pages:focus{
+    font-weight: bold;
+    color: white;
+}
+
 .pages:hover {
      color: white;
      text-decoration: underline;
