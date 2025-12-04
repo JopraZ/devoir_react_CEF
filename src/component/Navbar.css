@@ -4,11 +4,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-content: space-evenly;
-    padding: 20px 10px 10px;
+    padding: 15px 10px 10px;
 } 
 
 header h1 {
     font-size: medium;
+    margin-left: 15px;
 }
 
 .pages {
@@ -16,7 +17,9 @@ header h1 {
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.3s ease;
-    padding-left: 15px
+    padding-left: 15px;
+    margin-right: 10px;
+
 }
 
 .pages:hover {

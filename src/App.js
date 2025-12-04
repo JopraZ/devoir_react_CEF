@@ -1,4 +1,4 @@
-import { Routes,Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -6,7 +6,7 @@ import Realisation from "./pages/Realisation";
 import MentionLegales from "./pages/MentionLegales";
 import Services from "./pages/Services";
 
-function App(){
+function App() {
     return (
         <>
             <Routes>
@@ -17,7 +17,7 @@ function App(){
                 <Route path="/Services" element={<Services/>} />
             </Routes>
         </>
-    )
+    );
 }
 
 export default App;
