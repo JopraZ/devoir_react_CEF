@@ -1,0 +1,50 @@
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: bottom;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    font-family: "NunitoSans", sans-serif;
+
+}
+
+footer h2 {
+    font-size: large;
+}
+
+.contactLink {
+    color: #cecece;;
+    text-decoration: none;
+    transition: all 0.3s ease;
+} 
+
+.contactLink:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.textblock {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.faviconBlock {
+    margin-top: 15px;
+}
+
+.faviconFooter {
+    color: rgba(169, 169, 169, 0.4);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+} 
+
+.faviconFooter:hover{
+    color: white
+}
