@@ -5,7 +5,8 @@ header{
     justify-content: space-between;
     align-content: space-evenly;
     padding: 15px 10px 10px;
-} 
+    font-family: "NunitoSans", sans-serif;
+}
 
 header h1 {
     font-size: medium;
