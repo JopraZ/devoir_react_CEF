@@ -1,4 +1,4 @@
-header{
+nav{
     background-color: black;
     color: white;
     display: flex;
@@ -6,9 +6,10 @@ header{
     align-content: space-evenly;
     padding: 15px 10px 10px;
     font-family: "NunitoSans", sans-serif;
+    position: sticky;
 }
 
-header h1 {
+nav h1 {
     font-size: medium;
     margin-left: 15px;
 }

@@ -5,7 +5,7 @@ import "./Navbar.css"
 
 function Navbar(){
     return (
-        <header>
+        <nav>
             <h1>JOHN DOE</h1>
             <div>
                 <Link to="../pages/Home" className="pages">HOME</Link>
@@ -15,7 +15,7 @@ function Navbar(){
                 <Link to="../pages/MentionLegales" className="pages">MENTION LÉGALES</Link>
             </div>
 
-        </header>
+        </nav>
     );
 }
 

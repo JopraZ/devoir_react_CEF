@@ -1,0 +1,36 @@
+header {
+    background-image: url(../../public/assets/images/hero-bg.jpg);
+    background-size: cover; /* Recouvre tout en gardant les proportions */
+    background-position: center; /* ou top, bottom, left, right */
+    background-repeat: no-repeat;
+    height: 100vh;
+    filter: opacity(70%);
+
+}
+
+.contentHeader  {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentHeader h1 {
+   font-size: 5em ; 
+   font-weight: bold;
+}
+
+.contentHeader h2 {
+   font-size: 4em ; 
+   font-weight: bold;
+}
+
+.contentHeader button{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px 20px;
+}
