@@ -8,17 +8,13 @@ export default function Home() {
             <header className="contentHeader">
                 <h1>Bonjour, je suis John Doe.</h1>
                 <h2>Développeur full stack</h2>
-                <button onClick={() => setIsOpen(true)}>En savoir plus</button>
-            </header>
-            <main>
-                <input>
-                </input>
-
+                <button onClick={() => setIsOpen(true)} className="btn.header">En savoir plus</button>
                 <Modale 
                 isOpen={isOpen}
                 onClose={() => setIsOpen(false)} />
-                
-                </main>
+            </header>
+            <main>    
+            </main>
         </body>
     )
 }

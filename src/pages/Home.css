@@ -27,7 +27,7 @@ header {
    font-weight: bold;
 }
 
-.contentHeader button{
+.contentHeader > button{
     background-color: red;
     color: white;
     border-radius: 5px;
