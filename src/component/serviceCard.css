@@ -1,0 +1,90 @@
+
+/* ===== CARTE BLANCHE SIMPLE ===== */
+.simple-card {
+  /* Style de base */
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border: 1px solid #f0f0f0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 400px; 
+  
+  
+  /* Ombre vers le bas seulement */
+  box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.08);
+  
+  /* Transition pour hover */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* ESPACE INTERNE ET EXTERNE */
+  margin-bottom: 1.5rem; /* Espace entre les cards en vertical */
+
+  max-width: 400px;
+  width: 100%;
+}
+
+/* ===== EFFET AU SURVOL ===== */
+.simple-card.hoverable:hover {
+  /* Ombre plus prononcée vers le bas au survol */
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  border-color: #e0e0e0;
+}
+
+/* ===== FAVICON ===== */
+.favicon-container {
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  color: rgb(13, 192, 252);
+}
+
+.favicon-container i {
+  font-size: 2.5rem;
+}
+
+
+
+/* ===== TITRE ===== */
+.card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+  text-align: inherit;
+}
+
+/* ===== DESCRIPTION ===== */
+.card-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+  font-weight: 400;
+  text-align: inherit;
+}
+
+/* ===== ALIGNEMENT ===== */
+.text-left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.text-center {
+  align-items: center;
+  text-align: center;
+}
+
+.text-right {
+  align-items: flex-end;
+  text-align: right;
+}
