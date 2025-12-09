@@ -2,7 +2,7 @@
 import "../component/modale.css";
 import ReactDOM from "react-dom";
 
-export default function Modale({ isOpen, onClose, children }) {
+export default function Modale({ isOpen, onClose, }) {
     if (!isOpen) return null;
 
     return ReactDOM.createPortal(
