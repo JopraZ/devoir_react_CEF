@@ -1,0 +1,98 @@
+/* ServiceCard - Version simplifiée */
+
+.simple-card {
+  background: white;
+  border-radius: 5px;
+  padding-top: 0 !important;
+  box-shadow: 0 2px 8px rgba(50, 50, 50, 0.08);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.simple-card:hover{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); ;
+}
+
+
+/* Alignement */
+.text-left { text-align: left; align-items: flex-start; }
+.text-center { text-align: center; align-items: center; }
+.text-right { text-align: right; align-items: flex-end; }
+
+/* Image */
+.card-image-container {
+  width: 400PX;
+  height: auto;
+  display: block;
+  padding: 0;
+  margin-bottom: 1rem;
+ }
+
+.card-body {
+    padding: 0;
+}
+/* Titre */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+/* Description */
+.card-description {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+/* Bouton */
+.card-button-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  
+}
+
+.card-button {
+  padding: 0.625rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 500;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card-button:hover {
+  background: #2563eb;
+}
+
+
+
+/* Style pour la deuxième description */
+.secondary-description {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  padding:  0 !important;
+}
+
+/* Style minimal */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .simple-card {
+    padding: 1.25rem;
+  }
+  
+  .card-button {
+    padding: 0.5rem 1.5rem;
+  }
+}
