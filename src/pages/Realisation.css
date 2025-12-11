@@ -37,9 +37,10 @@
 
 .real-card {
     display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
     flex-wrap: wrap;
-    margin: 50px 50px;
-    margin-bottom: 50px ;
+    justify-content: center; /* Centre horizontalement */
+    gap: 40px;
+    max-width: 1200px; /* Largeur maximale du conteneur */
+    margin: 50px auto; /* Centre le conteneur dans la page */
+    padding: 0 20px;;
 }
