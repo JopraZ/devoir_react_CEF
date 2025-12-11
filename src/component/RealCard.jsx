@@ -5,11 +5,13 @@ import Button from 'react-bootstrap/Button';
 function ServiceCard({ 
   imageUrl, 
   imageAlt = "", 
+  
   title, 
   description,
   secondaryDescription,
   buttonText,
   onButtonClick,
+
   width = '22rem',
   align = 'center',
   buttonVariant = 'primary'

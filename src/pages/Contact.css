@@ -1,0 +1,108 @@
+.contact-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  padding-bottom: 0; /* Supprimer le padding */
+}
+
+.contact-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.contact-text p {
+  white-space: nowrap; /* Empêche le retour à la ligne */
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0; /* Supprimer tout padding */
+}
+
+.separator {
+  width: 80%;
+  height: 6px;
+  background-color: rgb(55, 105, 255);/* Bleu plus vif et pétant */
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 0;
+  opacity: 1;
+}
+
+.form-title {
+    border-bottom: 4px solid rgb(55, 105, 255);
+    font-weight: bold;
+}
+
+.contact-icon{
+    display: flex;
+    flex-direction: column;
+    font-style: normal ;
+}
+
+.contact-body {
+  display: flex;
+  justify-content: center;
+  max-width: none; /* Supprime la limite fixe */
+  width: 80%;  /* Largeur totale du bloc fusionné */
+  margin: 0 auto;
+  padding: 20px 50px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: white; 
+}
+
+.contact-form, .contact-details {
+  padding: 40px 25px; /* Padding intérieur égal */
+  background: white;
+}
+
+
+
+/* Fusion visuelle : supprimer l'espace et l'ombre externe */
+.contact-form, .contact-details {
+  margin: 0;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: none; /* Supprime l'ombre externe précédente */
+}
+
+/* Ombre globale pour l'ensemble du bloc */
+
+/* Pour le formulaire */
+.form-title {
+  margin-bottom: 25px;
+  border-bottom: 4px solid rgb(25, 82, 255);
+  padding-bottom: 10px;
+}
+
+/* Supprimer l'ombrage des champs si trop prononcé */
+
+
+
+/* Ou si vous voulez un bouton plus large mais centré */
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-body {
+    flex-direction: column;
+    padding: 0;
+    box-shadow: none;
+  }
+  
+  .contact-form, .contact-details {
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .contact-form {
+    border-radius: 10px;
+  }
+  
+  .contact-details {
+    border-radius: 10px;
+  }
+}
