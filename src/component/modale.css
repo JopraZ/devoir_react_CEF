@@ -45,7 +45,7 @@
     font-size: 40px;
     color: #aaa;
     cursor: pointer;
-    margin-right: 30px; /* ← Force une marge à droite */
+    margin-right: 30px; 
     padding: 0;
     line-height: 1;
 }
@@ -71,13 +71,15 @@
 }
 
 .modal-avatar {
+     display: flex;
+  align-items: center;
+  justify-content: center; 
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-fit: cover;
     border: 3px solid white;
     margin-right: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 
@@ -174,4 +176,73 @@
 
 .btn-close-modal:hover {
     background: #666; 
+}
+
+@media (max-width: 1024px) {
+    .modal-body {
+        min-height: 350px;
+    }
+    
+    .modal-left {
+        padding: 1.5rem;
+    }
+    
+    .modal-avatar {
+        max-width: 200px;
+    }
+    
+    .modal-right {
+        padding: 1.5rem;
+    }
+    
+    .name-item h2 {
+        font-size: 2.2rem;
+    }
+    
+    .name-item .stat-label {
+        font-size: 1.1rem;
+    }
+    
+    .stat-text .stat-label {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-body {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .modal-left {
+        padding: 2rem 1rem;
+        order: 1; 
+    }
+    
+    .modal-avatar {
+        max-width: 180px;
+        max-height: 180px;
+    }
+    
+    .modal-right {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        order: 2; 
+        margin-bottom: 4.5rem;
+    }
+    
+    .name-item h2 {
+        font-size: 2rem;
+    }
+    
+    .name-item .stat-label {
+        font-size: 1rem;
+    }
+    
+    
+    .stat-text .stat-label {
+        font-size: 1.1rem;
+    }
+
 }

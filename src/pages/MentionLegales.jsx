@@ -7,7 +7,7 @@ export default function LegalTerms() {
         <>
         <div className="legal-text">
             <h1>Mentions légales</h1>
-            <hr className="separator"/>
+            <hr className="legal-separator"/>
         </div>
         <div className="legal-accordion">
             <Accordion defaultActiveKey="0" flush>

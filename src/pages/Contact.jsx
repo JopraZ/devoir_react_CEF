@@ -16,10 +16,10 @@ export default function Contact() {
         width="100%"
         height="400"
         style={{ 
-          border: 0,
-          borderRadius: '10px',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-          marginTop: '15px'
+            border: 0,
+            borderRadius: '10px',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+            marginTop: '15px'
         }}
       ></iframe>
     </div>
@@ -28,11 +28,13 @@ export default function Contact() {
 
     return (
         <>
-            <div className="contact-text">
-                <h1>Contact</h1>
-                <p>Pour me contacter en vue d'un entretien ou d'un future collaboration, 
-                    merci de remplir le formulaire de contact.</p>
-                <hr class="separator"></hr>
+            <div className="contact-header">
+                <h1 className="contact-title">Contact</h1>
+                <p className="contact-description">
+                    Pour me contacter en vue d'un entretien ou d'une future collaboration, 
+                    merci de remplir le formulaire de contact.
+                </p>
+                <hr className="contact-separator" />
             </div>
             <div className='contact-body'>
                 <div className='contact-form'>
@@ -61,7 +63,7 @@ export default function Contact() {
                         <span class="bi bi-geo-alt no-italic" >69009 Lyon, France</span>
                         <span class="bi bi-phone no-italic"> 10 20 30 40 50</span>
                         <span class="bi bi-envelope-open-heart no-italic "> John.Doe@gmail.com</span>
-                        <GoogleMap/>
+                        <GoogleMap />
                     </div>
                 </div>
             </div>

@@ -9,6 +9,7 @@ export default function Realisation() {
         <div className="real-text">
             <h1>Porfolio</h1>
             <p>Voici quelques-une de mes réalisation</p>
+            <hr className="real-separator" />
         </div>
 
         <div className="real-card">

@@ -33,27 +33,26 @@ function ServiceCard({
     e.currentTarget.style.transform = 'translateY(0)';
   }}
 >
-      {/* Image */}
-      {imageUrl && (
-        <Card.Img 
-          variant="top" 
-          src={imageUrl} 
-          alt={imageAlt || title}
-          style={{ 
-            height: '200px', 
-            objectFit: 'cover' 
-          }}
-        />
-      )}
+
+      	{imageUrl && (
+			<Card.Img 
+			variant="top" 
+			src={imageUrl} 
+			alt={imageAlt || title}
+			style={{ 
+				height: '200px', 
+				objectFit: 'cover' 
+			}}
+			/>
+		)}	
       
-      {/* Contenu */}
-      <Card.Body className={`text-${align} p-0 pt-4`}>
+
+      	<Card.Body className={`text-${align} p-0 pt-4`}>
         <Card.Title>{title}</Card.Title>
         {description && (
           <Card.Text className="mb-4">{description}</Card.Text>
         )}
         
-        {/* Bouton */}
         <Button 
           variant={buttonVariant} 
           onClick={onButtonClick}
@@ -62,7 +61,6 @@ function ServiceCard({
           {buttonText}
         </Button>
         
-        {/* Deuxième description avec bordure noire et fond gris */}
         {secondaryDescription && (
           <div className="border-top-grey bg-light pb-2 mt-1 pt-2">
             {secondaryDescription}
